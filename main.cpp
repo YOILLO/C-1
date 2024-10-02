@@ -71,6 +71,10 @@ int main(void){
 
     ofstream fout_h("f.h");
 
+    fout_h << "#pragma once" << endl;
+
+    fout_h << endl;
+
 	fout_h << "int f(";
 
     for (string variable : unique_list)
